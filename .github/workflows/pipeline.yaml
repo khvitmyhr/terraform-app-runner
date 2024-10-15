@@ -27,6 +27,7 @@ jobs:
           docker build . -t hello
           docker tag hello 244530008913.dkr.ecr.eu-west-1.amazonaws.com/kihv001-private:$rev
           docker tag hello 244530008913.dkr.ecr.eu-west-1.amazonaws.com/kihv001-private:latest
+          docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/kihv001-private:latest
 
   terraform:
     name: "Terraform"
